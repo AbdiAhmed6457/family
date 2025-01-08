@@ -1,0 +1,126 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sofia', sans-serif;
+    background-image: url("images/fam-bg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    height: 100vh;
+    border: 20px solid; /* Set the thickness of the border */
+    border-image-slice: 60; /* Control how the image is sliced */
+    border-image-repeat: round; 
+    border-radius: 190px;
+    display: flex;
+   justify-content: center;
+}
+
+.container {
+    /* background-color: aqua; */
+    width: 95%;
+    border: 5px solid rgb(29, 130, 68);
+   border-radius: 100px;
+   background-image: url("images/ahmed.jpg");
+   background-size: cover;
+   background-position: 20%  60%;
+       background-repeat: no-repeat;
+       /* background-color:#FFF0F5 ; */
+   opacity: 0.6; 
+}
+
+.heading {
+    width: 100%;
+    height: 33%;
+    padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+   border: 5px solid purple;
+   border-radius: 100px;
+   color: #333333;
+   background-color:#F5F5F5 ;
+   opacity: 0.7;
+
+   /* background-color: #F5F5F5, #FFFFF0, #F5FFFA, #FFF0F5, #F0FFF0, #F0F8FF, #FFF5EE, #F5F5DC, #E0FFFF, #FFDAB9, #FFFACD, #B0E0E6, #FFE4E1, #98FB98, #E6E6FA; */
+   Black: #000000
+   Dark Gray: #333333
+   
+   Navy Blue: #003366
+   Dark Blue: #004080
+   Deep Green: #006400
+   Crimson Red: #DC143C
+   Charcoal: #555555
+   Slate Gray: #708090
+   Muted Purple: #6A5ACD
+}
+
+.both-flower {
+    width: 100px;
+    height: auto;
+
+}
+.left-flower {
+    margin-left: 10px;
+}
+.right-flower {
+    margin-right: 10px;
+}
+.jechama {
+    width: 200px;
+    height: 200px;
+    font-size: 10px;
+    padding: 20px;
+    font-weight: 600;
+     white-space: wrap;
+     overflow: hidden;      
+     text-overflow: ellipsis;
+}
+
+    /* Aside part */
+
+    @media (max-width: 500px) {
+    body {
+        height: auto; /* Adjust height for smaller screens */
+        border: 10px solid; /* Reduce border thickness */
+        border-radius: 50px; /* Reduce border radius */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: flex-start; /* Align content to the top */
+    }
+
+    .container {
+        width: 90%; /* Reduce container width */
+        border: 3px solid rgb(29, 130, 68); /* Reduce border thickness */
+        border-radius: 50px; /* Adjust border radius */
+    }
+
+    .heading {
+        padding: 10px; /* Reduce padding */
+        flex-direction: column; /* Stack content vertically */
+        border: 3px solid purple; /* Reduce border thickness */
+        border-radius: 50px; /* Adjust border radius */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .both-flower {
+        width: 50px; /* Reduce flower image size */
+    }
+
+    .left-flower,
+    .right-flower {
+        margin: 5px; /* Reduce margin */
+    }
+
+    .jechama {
+        width: 100px; /* Reduce width */
+        font-size: 8px; /* Reduce font size */
+        padding: 10px; /* Reduce padding */
+    }
+}
