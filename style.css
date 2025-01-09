@@ -146,7 +146,6 @@ body {
 } */
 
 .content{
-    background-color: rgb(89, 145, 90);
     width: 30%; /* 30% of the parent container's width */
     height: 50%; /* 50% of the parent container's height */
     display: inline-flex;
@@ -155,11 +154,10 @@ body {
     text-align: center;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
                        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4),
-                0px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 20px 30px rgba(18, 129, 42, 0.8),
+                0px 10px 10px rgba(0, 0, 0, 0.8);
 
-    color: #222;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 15px 1px 0px 15px;
     position: relative;
     background-image: url("images/abu.jpg");
@@ -216,7 +214,7 @@ footer {
   .neon-effect {
     font-family: 'Sofia', sans-serif;
     font-size: 20px;
-    color: #39ff14; /* Neon green color */
+    color: #ebff14; /* Neon green color */
     text-transform: uppercase;
     animation: neonGlow 1.5s infinite;
 }
@@ -224,7 +222,7 @@ footer {
 @keyframes neonGlow {
     0% { text-shadow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(24, 62, 18, 0.8); }
     50% { text-shadow: 0 0 20px rgb(19, 25, 193), 0 0 30px rgb(26, 107, 12); }
-    100% { text-shadow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.8); }
+    100% { text-shadow: 0 0 10px rgba(255, 118, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.8); }
 }
 
  
