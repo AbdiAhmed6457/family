@@ -43,14 +43,14 @@ body {
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
-   border: 5px solid purple;
+   border: 5px solid #98FB98;
    border-radius: 100px;
    color: #555555;
    background-color:#98FB98;
    opacity: 0.7;
 
    /* background-color: #F5F5F5, #FFFFF0, #F5FFFA, #FFF0F5, #F0FFF0, #F0F8FF, #FFF5EE, #F5F5DC, #E0FFFF, #FFDAB9, #FFFACD, #B0E0E6, #FFE4E1, #98FB98, #E6E6FA; */
-   Black: #000000
+   /* Black: #000000
    Dark Gray: #333333
    
    Navy Blue: #003366
@@ -59,7 +59,7 @@ body {
    Crimson Red: #DC143C
    Charcoal: #555555
    Slate Gray: #708090
-   Muted Purple: #6A5ACD
+   Muted Purple: #6A5ACD */
 }
 
 .both-flower {
@@ -90,10 +90,12 @@ body {
         height: 55%;
         float: left;
         position: relative;
-        /* background-image: url("images/family-bg.jpg"); */
-        border: 5px solid;
-       
-        background-color: transparent;
+        background-image: url("adimages/glass.jpg");
+        border: 5px solid #98FB98;
+        border-radius: 130px 0 ;
+        background-position: center center;
+        background-size: contain;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
          
 
     }
@@ -103,15 +105,15 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 15px;
-    clip-path: polygon(20% 20%, 100% 0%, 100% 100%, 0% 100%, 20% 80%, 0% 80%);
-    left: 45px;
+    top: 0px;
+    left: -10px;
+    clip-path: polygon(30% 20%, 60% 0%, 100% 80%, 0% 100%, 20% 80%, 0% 80%);
     border: 5px solid;
-    background-image: url("images/family-bg.jpg");
+    background-image: url("adimages/glass2.jpg");
     border-image-slice: 70;
-    background-color: rgba(255, 255, 255, 0);
+    background-position: center center;
 
-    
+   
  }
 .siddu-text {
     position: absolute;
@@ -121,6 +123,34 @@ body {
     font-size: 28px;
     
 }
+
+.right-aside {
+    /* background-color: aqua; */
+    width: 33%;
+    height: 55%;
+    float: right;
+    position: relative;
+    background-image: url("adimages/glass.jpg");
+    border: 5px solid #98FB98;
+    border-radius: 0px 130px;
+    background-position: center center;
+    background-size: contain;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
+
+}
+.sufi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -10px;
+    clip-path: polygon(30% 20%, 60% 0%, 100% 80%, 0% 95%, 30% 80%, 0% 80%);
+    border: 5px solid;
+    background-image: url("adimages/glass2.jpg");
+    background-position: center center;
+
+   
+ }
 
 
 
