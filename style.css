@@ -1,4 +1,4 @@
-* {
+/*  * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -14,49 +14,45 @@ body {
     color: white;
     display: flex;
     height: 100vh;
-    border: 20px solid; /* Set the thickness of the border */
-    border-image-slice: 60; /* Control how the image is sliced */
-    border-image-repeat: round; 
+    border: 20px solid;
+    border-image-slice: 60;
+    border-image-repeat: round;
     border-radius: 190px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
 }
 
 .container {
     display: inline-block;
-    /* background-color: aqua; */
     width: 95%;
     border: 5px solid rgb(89, 144, 110);
-   border-radius: 100px;
-   background-image: url("images/ahmed-abdi-removebg-preview.png");
-   background-size: cover;
-   background-position: 99% 60%;
-       background-repeat: no-repeat;
-       /* background-color:#FFF0F5 ; */
-   opacity: 0.6; 
-   position: relative;
+    border-radius: 100px;
+    background-image: url("images/ahmed-abdi-removebg-preview.png");
+    background-size: cover;
+    background-position: 99% 60%;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    position: relative;
 }
 
 .heading {
     width: 100%;
     height: 33%;
     padding: 20px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
-   border: 5px solid #98FB98;
-   border-radius: 100px;
-   color: #555555;
-   background-color:#98FB98;
-   opacity: 0.7;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid #98FB98;
+    border-radius: 100px;
+    color: #555555;
+    background-color:#98FB98;
+    opacity: 0.7;
 }
 
 .both-flower {
     width: 100px;
     height: auto;
-
 }
 .left-flower {
     margin-left: 10px;
@@ -65,110 +61,82 @@ body {
     margin-right: 10px;
 }
 .quran {
-    
     font-size: 15px;
     font-weight: 700;
-     white-space: wrap;
-     overflow: hidden;      
-     text-overflow: ellipsis;
-     width: 20%;
+    white-space: wrap;
+    overflow: hidden;      
+    text-overflow: ellipsis;
+    width: 20%;
 }
 
-    /* Aside part */
+.both-asides {
+    width: 33%;
+    height: 55%;
+    position: relative;
+    background-image: url("adimages/glass.jpg");
+    border-width: 1px 5px 2px 0px;
+    border: solid #98FB98;
+    border-bottom: none;
+    background-position: center center;
+    background-size: contain;
+}
 
-    .both-asides {
-        width: 33%;
-        height: 55%;
-        position: relative;
-        background-image: url("adimages/glass.jpg");
-        border-width: 1px 5px 2px 0px;
-        border: solid #98FB98;
-        border-bottom: none;
-        background-position: center center;
-        background-size: contain;
-    }
-    
-    .left-aside {        
-        float: left;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
-        border-radius: 130px 0 ;
-         
-    }
-    .right-aside {
-        float: right;
-        border-radius: 0px 130px;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
-    
-    }
- .susi {
+.left-aside {        
+    float: left;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
+    border-radius: 130px 0;
+}
+
+.right-aside {
+    float: right;
+    border-radius: 0px 130px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
+}
+
+.susi {
     position: absolute;
     width: 100%;
     height: 100%;
     border: 5px solid;
     background-image: url("adimages/glass2.jpg");
     background-position: center center;
- }
+}
 
-   
- .siddu {
-    
+.siddu {
     top: 0px;
     left: -10px;
     clip-path: polygon(30% 20%, 60% 0%, 100% 80%, 0% 100%, 20% 80%, 0% 80%);
-   
- }
+}
 
- .sufi {
+.sufi {
     top: 0px;
     left: 10px;
     clip-path: polygon(20% 20%, 85% 1%, 100% 80%, 30% 95%, 30% 80%, 0% 80%);
- 
+}
 
-   
- }
 .both-text {
-
     position: absolute;
     bottom: 0px;
     left: 70px;
-    
-    
 }
+
 .both-text {
     font-family: 'Sofia', sans-serif;
     font-size: 30px;
-    color: #00ffcc; /* Teal color */
+    color: #00ffcc;
     text-transform: uppercase;
     position: relative;
     animation: glitchAnimation 3s infinite;
 }
-/* .content{
-    background-color: green;
-    width: 30%;
+
+.content {
+    width: 25%;
     height: 40%;
-    display: flex;
-    float: right;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px 13px 0px 0px;
-
-} */
-
-.content{
-    width: 25%; /* 30% of the parent container's width */
-    height: 40%; /* 50% of the parent container's height */
     display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #555555;
-    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
-                       50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    box-shadow: 0px 20px 30px rgba(18, 129, 42, 0.8),
-                0px 10px 10px rgba(0, 0, 0, 0.8); */
-
-    /* font-weight: bold; */
     margin:  3.5% 0% 0% 7%;
     position: relative;
     background-image: url("images/abu-bg.jpg");
@@ -177,11 +145,9 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     border: 5px solid white;
-
-
-
 }
-  .abu {
+
+.abu {
     position: absolute;
     top: -10%;
     left: -20%;
@@ -196,17 +162,17 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     object-fit: cover;
+}
 
-  }
-
-.parent{
-    position:absolute;
+.parent {
+    position: absolute;
     top: 87%;
     right: 20%;
 }
+
 footer {
     background-color: rgba(255, 255, 220, 0.5);
-    height: 18%; /* Increased height for more pronounced rounding */
+    height: 18%;
     width: 100%;
     bottom: 0px;
     margin-left: 0;
@@ -224,8 +190,6 @@ footer {
     box-sizing: border-box;
 }
 
-
-
 .rainbow-effect {
     font-family: 'Sofia', sans-serif;
     font-size: 30px;
@@ -233,36 +197,31 @@ footer {
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     animation: rainbowAnimation 5s linear infinite, fadeInOut 6s ease-in-out infinite;
 }
 
-/* Animation for background gradient movement */
 @keyframes rainbowAnimation {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
 }
 
-/* Animation for fading in and out */
 @keyframes fadeInOut {
     0% { opacity: 0.6; }
     50% { opacity: 1; }
     100% { opacity: 0.7; }
 }
 
-
-.bara{
+.bara {
     font-size: 16px;
-    font-weight: 600 ;
+    font-weight: 600;
 }
-
 
 @keyframes glitchAnimation {
     0% { text-shadow: 2px 0 red, -2px 0 blue; }
     50% { text-shadow: -2px 0 red, 2px 0 blue; }
     100% { text-shadow: 2px 0 red, -2px 0 blue; }
 }
-
 
 .bara {
     font-family: 'Sofia', sans-serif;
@@ -280,12 +239,10 @@ footer {
     to { width: 100%; }
 }
 
- 
-
-.parent{
+.parent {
     font-family: 'Sofia', sans-serif;
     font-size: 20px;
-    color: #bfff00; /* Magenta color */
+    color: #bfff00;
     text-transform: uppercase;
     animation: retroNeon 1.5s infinite alternate;
 }
@@ -296,14 +253,8 @@ footer {
 }
 
 
- 
-  /* .fancy {
-      background: linear-gradient(to right, #f06, #4a90e2);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: 'Helvetica', sans-serif;
-  } */
+ */
+  
 
 
 
@@ -318,42 +269,340 @@ footer {
 
 
 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    @media (max-width: 500px) {
-    body {
-        height: auto; /* Adjust height for smaller screens */
-        border: 10px solid; /* Reduce border thickness */
-        border-radius: 50px; /* Reduce border radius */
-        flex-direction: column; /* Stack content vertically */
-        justify-content: flex-start; /* Align content to the top */
-    }
+body {
+    font-family: 'Sofia', sans-serif;
+    background-image: url("images/fam-bg2.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    height: 100vh;
+    border: 20px solid;
+    border-image-slice: 60;
+    border-image-repeat: round;
+    border-radius: 190px;
+    display: flex;
+    justify-content: center;
+}
 
+.container {
+    display: inline-block;
+    width: 95%;
+    border: 5px solid rgb(89, 144, 110);
+    border-radius: 100px;
+    background-image: url("images/ahmed-abdi-removebg-preview.png");
+    background-size: cover;
+    background-position: 99% 60%;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    position: relative;
+}
+
+.heading {
+    width: 100%;
+    height: 33%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid #98FB98;
+    border-radius: 100px;
+    color: #555555;
+    background-color: #98FB98;
+    opacity: 0.7;
+}
+
+.both-flower {
+    width: 100px;
+    height: auto;
+}
+
+.left-flower {
+    margin-left: 10px;
+}
+
+.right-flower {
+    margin-right: 10px;
+}
+
+.quran {
+    font-size: 15px;
+    font-weight: 700;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 20%;
+}
+
+/* Aside part */
+
+.both-asides {
+    width: 33%;
+    height: 55%;
+    position: relative;
+    background-image: url("adimages/glass.jpg");
+    border-width: 1px 5px 2px 0px;
+    border: solid #98FB98;
+    border-bottom: none;
+    background-position: center center;
+    background-size: contain;
+}
+
+.left-aside {
+    float: left;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
+    border-radius: 130px 0;
+}
+
+.right-aside {
+    float: right;
+    border-radius: 0px 130px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
+}
+
+.susi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid;
+    background-image: url("adimages/glass2.jpg");
+    background-position: center center;
+}
+
+.siddu {
+    top: 0px;
+    left: -10px;
+    clip-path: polygon(30% 20%, 60% 0%, 100% 80%, 0% 100%, 20% 80%, 0% 80%);
+}
+
+.sufi {
+    top: 0px;
+    left: 10px;
+    clip-path: polygon(20% 20%, 85% 1%, 100% 80%, 30% 95%, 30% 80%, 0% 80%);
+}
+
+.both-text {
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+}
+
+.both-text {
+    font-family: 'Sofia', sans-serif;
+    font-size: 30px;
+    color: #00ffcc;
+    text-transform: uppercase;
+    position: relative;
+    animation: glitchAnimation 3s infinite;
+}
+
+.content {
+    width: 25%;
+    height: 40%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #555555;
+    margin: 3.5% 0% 0% 7%;
+    position: relative;
+    background-image: url("images/abu-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+}
+
+.abu {
+    position: absolute;
+    top: -10%;
+    left: -20%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid white;
+    background-image: url("images/abu-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.parent {
+    position: absolute;
+    top: 87%;
+    right: 20%;
+}
+
+footer {
+    background-color: rgba(255, 255, 220, 0.5);
+    height: 18%;
+    width: 100%;
+    bottom: 0px;
+    margin-left: 0;
+    margin-top: -15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+    border: 2px solid white;
+    border-top: none;
+    border-radius: 0 0 250px 250px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.rainbow-effect {
+    font-family: 'Sofia', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(90deg, red, rgb(58, 58, 33), green, rgb(5, 42, 42), rgb(2, 36, 12), magenta);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: rainbowAnimation 5s linear infinite, fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes rainbowAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.bara {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@keyframes glitchAnimation {
+    0% { text-shadow: 2px 0 red, -2px 0 blue; }
+    50% { text-shadow: -2px 0 red, 2px 0 blue; }
+    100% { text-shadow: 2px 0 red, -2px 0 blue; }
+}
+
+.bara {
+    font-family: 'Sofia', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    animation: typing 3s steps(90) 1s 4 alternate-reverse both;
+    border-right: 2px solid #92e887;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 10%; }
+    to { width: 100%; }
+}
+
+.parent {
+    font-family: 'Sofia', sans-serif;
+    font-size: 20px;
+    color: #bfff00;
+    text-transform: uppercase;
+    animation: retroNeon 1.5s infinite alternate;
+}
+
+@keyframes retroNeon {
+    0% { text-shadow: 0 0 10px rgb(77, 18, 77), 0 0 20px rgba(81, 0, 255, 0.7); }
+    100% { text-shadow: 0 0 10px rgba(0, 255, 89, 0.7), 0 0 20px rgb(0, 17, 255); }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
     .container {
-        width: 90%; /* Reduce container width */
-        border: 3px solid rgb(29, 130, 68); /* Reduce border thickness */
-        border-radius: 50px; /* Adjust border radius */
+        width: 100%;
+        padding: 10px;
+        opacity: 1;
     }
 
     .heading {
-        padding: 10px; /* Reduce padding */
-        flex-direction: column; /* Stack content vertically */
-        border: 3px solid purple; /* Reduce border thickness */
-        border-radius: 50px; /* Adjust border radius */
-        font-size: 14px; /* Reduce font size */
+        font-size: 20px;
+        flex-direction: column;
     }
 
-    .both-flower {
-        width: 50px; /* Reduce flower image size */
+    .content {
+        width: 80%;
+        margin: 2% 10%;
+        height: auto;
     }
 
-    .left-flower,
-    .right-flower {
-        margin: 5px; /* Reduce margin */
+    footer {
+        font-size: 12px;
     }
 
-    .jechama {
-        width: 100px; /* Reduce width */
-        font-size: 8px; /* Reduce font size */
-        padding: 10px; /* Reduce padding */
+    .parent {
+        font-size: 16px;
+    }
+
+    .both-asides {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .left-aside, .right-aside {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .susi {
+        width: 90%;
+        height: auto;
+    }
+
+    .both-text {
+        font-size: 24px;
+        left: 20px;
+        bottom: 10px;
+    }
+
+    .rainbow-effect {
+        font-size: 24px;
+    }
+
+    .bara {
+        font-size: 14px;
+    }
+}
+
+/* Small Device Styles */
+@media (max-width: 480px) {
+    .both-text {
+        font-size: 18px;
+        left: 10px;
+        bottom: 5px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 5px;
     }
 }
