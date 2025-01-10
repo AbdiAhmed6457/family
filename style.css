@@ -285,6 +285,7 @@ body {
     background-repeat: no-repeat;
     display: inline-flex;
     /* height: 100vh; */
+    min-height: 100vh;
     border: 10px solid ;
     border-image-slice: 60;
     border-image-repeat: round;
@@ -293,8 +294,9 @@ body {
 }
 
 .container {
-    display: inline-block;
-    width: 95%;
+    
+    /* display: inline-block; */
+    width: 100%;
     border: 5px solid rgb(89, 144, 110);
     border-radius: 70px;
     background-image: url("images/ahmed-abdi-removebg-preview.png");
@@ -308,22 +310,23 @@ body {
 
 .heading {
     width: 100%;
-    height: 20%;
-    /* padding: 0px; */
+    height: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 4max solid #9898fb;
-    border-radius: 50px;
-    border-bottom: none;
+    justify-content: space-between;
+    border: 4px solid #9898fb;
+    border-bottom:0 ;
+    border-radius: 50px 50px 0 0 ; 
     color: #555555;
+    align-items: center;
     background-color: #98FB98;
-    opacity: 0.7;
+    opacity: 0.5;
+    margin-bottom: 100px; 
 }
 
+
 .both-flower {
-    width: 100px;
+    width: 20%;
     height: auto;
 }
 
@@ -342,10 +345,32 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 20%;
+    display: none ;
+}
+ .year {
+
+    width: 20%;
+    color: #000000;
+ }
+ 
+
+
+
+    /* 
+    
+    
+} */
+
+/* 
 }
 
-/* Aside part */
+ {
+   
+} */
 
+
+/* Aside part */
+/* 
 .both-asides {
     width: 33%;
     height: 55%;
@@ -489,27 +514,7 @@ footer {
     100% { opacity: 0.7; }
 }
 
-.bara {
-    font-size: 16px;
-    font-weight: 600;
-}
 
-@keyframes glitchAnimation {
-    0% { text-shadow: 2px 0 red, -2px 0 blue; }
-    50% { text-shadow: -2px 0 red, 2px 0 blue; }
-    100% { text-shadow: 2px 0 red, -2px 0 blue; }
-}
-
-.bara {
-    font-family: 'Sofia', sans-serif;
-    font-size: 20px;
-    color: #000000;
-    text-transform: uppercase;
-    animation: typing 3s steps(90) 1s 4 alternate-reverse both;
-    border-right: 2px solid #92e887;
-    white-space: nowrap;
-    overflow: hidden;
-}
 
 @keyframes typing {
     from { width: 10%; }
@@ -529,7 +534,8 @@ footer {
     100% { text-shadow: 0 0 10px rgba(0, 255, 89, 0.7), 0 0 20px rgb(0, 17, 255); }
 }
 
-/* Mobile Styles */
+    
+            Mobile Styles 
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -587,7 +593,7 @@ footer {
     }
 }
 
-/* Small Device Styles */
+    Small Device Styles 
 @media (max-width: 480px) {
     .both-text {
         font-size: 18px;
@@ -606,4 +612,4 @@ footer {
     .container {
         padding: 5px;
     }
-}
+} */
